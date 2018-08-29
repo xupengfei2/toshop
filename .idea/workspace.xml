@@ -7,167 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02e04ff7-56ec-4aed-9b06-7068071872c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/standard.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/CartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/PayInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/ShippingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/PayInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/Shipping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toshop/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/PayInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/tools/mysql-connector-java-5.1.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/standard.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/CartMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/CategoryMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/OrderItemMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/OrderMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/PayInfoMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/ProductMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/ShippingMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/dao/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/OrderItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/PayInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/Shipping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/toshop/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/CartMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/CategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/PayInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/ShippingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/applicationContext-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/CartMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/CategoryMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/OrderItemMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/OrderMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/PayInfoMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/ProductMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/ShippingMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/dao/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/OrderItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/PayInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/Shipping.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/service/IUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/com/toshop/service/impl/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/CartMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/CategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/PayInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/ShippingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/classes/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/aspectjrt-1.6.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/aspectjweaver-1.7.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-configuration-1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-fileupload-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-io-2.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-lang3-3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-net-3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-pool-1.5.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/core-2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/gson-2.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/guava-20.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/hashids-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/jackson-core-asl-1.9.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/jackson-mapper-asl-1.9.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/joda-time-2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/jsqlparser-0.9.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/logback-classic-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/logback-core-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/mybatis-3.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/mybatis-paginator-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/pagehelper-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/slf4j-api-1.7.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/slf4j-log4j12-1.7.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-aop-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-beans-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-context-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-core-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-expression-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-jdbc-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-oxm-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-test-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-tx-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/standard.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/lib/tomcat-servlet-api-8.5.24.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/views/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/views/user/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/toshop/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -324,6 +164,36 @@
               <item name="toshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="toshop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toshop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -496,15 +366,15 @@
       <workItem from="1535464056516" duration="3800000" />
       <workItem from="1535504231582" duration="11947000" />
       <workItem from="1535521434920" duration="1753000" />
-      <workItem from="1535523351786" duration="527000" />
+      <workItem from="1535523351786" duration="1152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20605000" />
+    <option name="totallyTimeSpent" value="21230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
