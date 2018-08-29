@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.toshop.dao.ShippingMapper" >
+  <resultMap id="BaseResultMap" type="com.toshop.pojo.Shipping" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="reciver_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="reciver_phone" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="reciver_mobile" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="reciver_province" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="reciver_city" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="reciver_district" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="reciver_address" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="reciver_zip" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, user_id, reciver_name, reciver_phone, reciver_mobile, reciver_province, reciver_city, 
+    reciver_district, reciver_address, reciver_zip, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from toshop_shipping
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from toshop_shipping
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.toshop.pojo.Shipping" >
+    insert into toshop_shipping (id, user_id, reciver_name, 
+      reciver_phone, reciver_mobile, reciver_province, 
+      reciver_city, reciver_district, reciver_address, 
+      reciver_zip, create_time, update_time
+      )
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{reciverName,jdbcType=VARCHAR}, 
+      #{reciverPhone,jdbcType=VARCHAR}, #{reciverMobile,jdbcType=VARCHAR}, #{reciverProvince,jdbcType=VARCHAR}, 
+      #{reciverCity,jdbcType=VARCHAR}, #{reciverDistrict,jdbcType=VARCHAR}, #{reciverAddress,jdbcType=VARCHAR}, 
+      #{reciverZip,jdbcType=VARCHAR}, now(), now()
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.toshop.pojo.Shipping" >
+    insert into toshop_shipping
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="reciverName != null" >
+        reciver_name,
+      </if>
+      <if test="reciverPhone != null" >
+        reciver_phone,
+      </if>
+      <if test="reciverMobile != null" >
+        reciver_mobile,
+      </if>
+      <if test="reciverProvince != null" >
+        reciver_province,
+      </if>
+      <if test="reciverCity != null" >
+        reciver_city,
+      </if>
+      <if test="reciverDistrict != null" >
+        reciver_district,
+      </if>
+      <if test="reciverAddress != null" >
+        reciver_address,
+      </if>
+      <if test="reciverZip != null" >
+        reciver_zip,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="reciverName != null" >
+        #{reciverName,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverPhone != null" >
+        #{reciverPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverMobile != null" >
+        #{reciverMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverProvince != null" >
+        #{reciverProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverCity != null" >
+        #{reciverCity,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverDistrict != null" >
+        #{reciverDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverAddress != null" >
+        #{reciverAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverZip != null" >
+        #{reciverZip,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        now(),
+      </if>
+      <if test="updateTime != null" >
+        now(),
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.toshop.pojo.Shipping" >
+    update toshop_shipping
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="reciverName != null" >
+        reciver_name = #{reciverName,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverPhone != null" >
+        reciver_phone = #{reciverPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverMobile != null" >
+        reciver_mobile = #{reciverMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverProvince != null" >
+        reciver_province = #{reciverProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverCity != null" >
+        reciver_city = #{reciverCity,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverDistrict != null" >
+        reciver_district = #{reciverDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverAddress != null" >
+        reciver_address = #{reciverAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="reciverZip != null" >
+        reciver_zip = #{reciverZip,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = now(),
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.toshop.pojo.Shipping" >
+    update toshop_shipping
+    set user_id = #{userId,jdbcType=INTEGER},
+      reciver_name = #{reciverName,jdbcType=VARCHAR},
+      reciver_phone = #{reciverPhone,jdbcType=VARCHAR},
+      reciver_mobile = #{reciverMobile,jdbcType=VARCHAR},
+      reciver_province = #{reciverProvince,jdbcType=VARCHAR},
+      reciver_city = #{reciverCity,jdbcType=VARCHAR},
+      reciver_district = #{reciverDistrict,jdbcType=VARCHAR},
+      reciver_address = #{reciverAddress,jdbcType=VARCHAR},
+      reciver_zip = #{reciverZip,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = now()
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
