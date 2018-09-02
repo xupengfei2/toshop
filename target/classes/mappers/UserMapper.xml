@@ -13,10 +13,11 @@
       <arg column="role" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
       <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="user_state" jdbcType="INTEGER" javaType="java.lang.Integer"/>
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
-    id, username, password, email, photo, question, answer, role, create_time, update_time
+    id, username, password, email, photo, question, answer, role, create_time, update_time, user_state
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -32,11 +33,11 @@
     insert into toshop_user (id, username, password, 
       email, photo, question, 
       answer, role, create_time, 
-      update_time)
+      update_time,user_state)
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
       #{email,jdbcType=VARCHAR}, #{photo,jdbcType=VARCHAR}, #{question,jdbcType=VARCHAR}, 
       #{answer,jdbcType=VARCHAR}, #{role,jdbcType=INTEGER},now(),
-      now())
+      now(),#{user_state})
   </insert>
   <insert id="insertSelective" parameterType="com.toshop.pojo.User" >
     insert into toshop_user
@@ -71,6 +72,9 @@
       <if test="updateTime != null" >
         update_time,
       </if>
+      <if test="updateTime != null" >
+        user_state,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -102,6 +106,9 @@
       </if>
       <if test="updateTime != null" >
         now(),
+      </if>
+      <if test="updateTime != null" >
+        #{userstate},
       </if>
     </trim>
   </insert>
@@ -151,4 +158,25 @@
       update_time = now()
     where id = #{id,jdbcType=INTEGER}
   </update>
+  
+  <select id="selectByUserNameAndPassword" resultMap="BaseResultMap" parameterType="map">
+    select <include refid="Base_Column_List"/>
+    from toshop_user where username=#{username} and password=#{password}
+  </select>
+  
+  <select id="checkUserName" resultType="int" parameterType="string">
+    select count(1) from toshop_user where username=#{username}
+  </select>
+
+  <select id="checkUserEmail" resultType="int" parameterType="string">
+    select count(1) from toshop_user where email=#{email}
+  </select>
+
+  <update id="updateUserStateByUserName" parameterType="map">
+    update toshop_user set user_state=#{user_state} where user_name=#{username}
+  </update>
+
+  <select id="selectUserStateByUserName" resultType="int" parameterType="string">
+    select user_state from toshop_user where username=#{username}
+  </select>
 </mapper>

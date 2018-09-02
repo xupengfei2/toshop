@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.toshop.dao.MailMapper" >
+    <resultMap id="BaseResultMap" type="com.toshop.pojo.Mail">
+        <constructor>
+            <idArg column="username" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="uuid" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="email" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+            <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+        </constructor>
+    </resultMap>
+
+    <insert id="insert" parameterType="com.toshop.pojo.Mail">
+        insert into toshop_mail (username, uuid, email, create_time, update_time)
+        values (#{uesrname}, #{uuid}, #{mail}, now(), now())
+    </insert>
+
+    <select id="selectUuid" resultType="int" parameterType="string">
+        select count(1) from toshop_mail where uuid=#{uuid}
+    </select>
+
+    <update id="updateUuidToNull" parameterType="string">
+        update toshop_mail set uuid=null, update_time=now() where uuid=#{uuid}
+    </update>
+
+    <select id="selectCreateTimeByUuid" resultType="date" parameterType="string">
+        select create_time from toshop_mail where uuid=#{uuid}
+    </select>
+
+    <select id="selectUserNameByUuid" resultType="int" parameterType="string">
+        select count(1) from toshop_mail where uuid=#{uuid}
+    </select>
+
+    <select id="selectUuidByUserName" resultType="string" parameterType="string">
+        select uuid from toshop_mail where username=#{username};
+    </select>
+</mapper>

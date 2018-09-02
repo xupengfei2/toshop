@@ -7,7 +7,10 @@ public interface IUserService {
 
     ServerResponse<User> login(String userName, String password);
 
-    int register(User user);
+    ServerResponse<String> register(User user);
 
+    ServerResponse<String> checkValid(String key, String value);
+
+    ServerResponse<String> activateUser(String uuid, String username);
 
 }

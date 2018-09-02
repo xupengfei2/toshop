@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * ServerResponse的响应数据类，你可以通过它指定响应数据的status(见com.toshop.common.ResponseCode)
  * 以及响应数据的具体内容(data); 并且，数据会被序列化为Json的格式！
- *
+ * @see com.toshop.common.ResponseCode
  * @param <T>
  */
 //include: 保证在序列化时，如果是value是null，key也会消失
@@ -40,7 +40,7 @@ public class ServerResponse<T> implements Serializable {
         this.data = data;
     }
 
-    // todo @JsonIgnore
+    @JsonIgnore
     public boolean isSuccess(){
         return this.status == ResponseCode.SUCCESS.getCode();
     }
@@ -74,7 +74,8 @@ public class ServerResponse<T> implements Serializable {
 
     /**
      *  可以自定义status参数的 ErrorCodeMessage 方法，status根据
-     * com.toshop.common.ResponseCode枚举类定义
+     * ResponseCode枚举类定义
+     * @see com.toshop.common.ResponseCode
      * @param errorCode
      * @param errorMsg
      * @param <T>
