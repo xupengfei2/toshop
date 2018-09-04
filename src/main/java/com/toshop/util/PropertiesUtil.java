@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.util.Properties;
 
 /**
+ * 配置文件读取工具类
  * Created by geely
  */
 public class PropertiesUtil {
@@ -18,7 +19,7 @@ public class PropertiesUtil {
     private static Properties props;
 
     static {
-        String fileName = "mmall.properties";
+        String fileName = "toshop.properties";
         props = new Properties();
         try {
             props.load(new InputStreamReader(PropertiesUtil.class.getClassLoader().getResourceAsStream(fileName),"UTF-8"));

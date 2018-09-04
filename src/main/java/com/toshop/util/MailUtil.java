@@ -20,10 +20,11 @@ public class MailUtil {
     public SimpleMailMessage simpleMailMessage(){
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         //发件人邮箱
-        simpleMailMessage.setFrom("xxxxxxx@163.com");
+        simpleMailMessage.setFrom("zhouricong960303@163.com");
         simpleMailMessage.setSubject("toshop网上商城注册通知");
         return simpleMailMessage;
     }
+
 
     /**
      * 简单邮件发送器
@@ -41,9 +42,9 @@ public class MailUtil {
         //smtp服务器端口，默认为25
         javaMailSender.setPort(25);
         //你的邮箱名
-        javaMailSender.setUsername("xxxxxxx@163.com");
+        javaMailSender.setUsername("zhouricong960303@163.com");
         //邮箱密码,163邮箱为你的smtp、pop3授权码
-        javaMailSender.setPassword("xxxxx");
+        javaMailSender.setPassword("lambda1024");
         javaMailSender.setJavaMailProperties(properties);
 
         return javaMailSender;

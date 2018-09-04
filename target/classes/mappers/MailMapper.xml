@@ -13,7 +13,7 @@
 
     <insert id="insert" parameterType="com.toshop.pojo.Mail">
         insert into toshop_mail (username, uuid, email, create_time, update_time)
-        values (#{uesrname}, #{uuid}, #{mail}, now(), now())
+        values (#{username}, #{uuid}, #{mail}, now(), now())
     </insert>
 
     <select id="selectUuid" resultType="int" parameterType="string">

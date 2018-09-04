@@ -1,7 +1,15 @@
 package main.com.toshop;
 
+import com.toshop.util.MD5Util;
+import com.toshop.util.MailUtil;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 
+import javax.annotation.Resource;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -29,4 +37,24 @@ public class UserTest {
         }
 
     }
+
+    @Test
+    public void md5Test(){
+        String md5password = MD5Util.MD5EncodeUtf8("123456");
+        System.out.println("password:\"123456\"的MD5密码：" + md5password);
+    }
+
+
+    @Test
+    public void mailSenderTest(){
+//        ApplicationContext context = new
+//                ClassPathXmlApplicationContext("applicationContext.xml");
+//        MailUtil mailUtil = (MailUtil) context.getBean("mailUtil");
+//        SimpleMailMessage simpleMailMessage = mailUtil.simpleMailMessage();
+//        simpleMailMessage.setTo("xxxxxxx@qq.com");
+//        simpleMailMessage.setText("email验证测试");
+//        JavaMailSenderImpl javaMailSender = mailUtil.javaMailSender();
+//        javaMailSender.send(simpleMailMessage);
+    }
+
 }

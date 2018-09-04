@@ -23,9 +23,9 @@ public class User {
 
     private Date updateTime;
 
-    private Integer userState;
+    private Integer user_state;
 
-    public User(Integer id, String username, String password, String email, String photo, String question, String answer, Integer role, Date createTime, Date updateTime, Integer userState) {
+    public User(Integer id, String username, String password, String email, String photo, String question, String answer, Integer role, Date createTime, Date updateTime, Integer state) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -36,7 +36,7 @@ public class User {
         this.role = role;
         this.createTime = createTime;
         this.updateTime = updateTime;
-        this.userState = userState;
+        this.user_state = state;
     }
 
     public User() {
@@ -123,11 +123,11 @@ public class User {
         this.updateTime = updateTime;
     }
 
-    public void setUserState(Integer userState) {
-        this.userState = userState;
+    public void setState(Integer state) {
+        this.user_state = state;
     }
 
-    public Integer getUserState() {
-        return userState;
+    public Integer getState() {
+        return user_state;
     }
 }

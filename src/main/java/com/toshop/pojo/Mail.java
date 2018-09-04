@@ -14,6 +14,10 @@ public class Mail {
 
     private Date updateTime;
 
+    public Mail(){
+
+    }
+
     public Mail(String username, String mail, String uuid) {
         this.username = username;
         this.mail = mail;

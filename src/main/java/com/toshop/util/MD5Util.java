@@ -1,10 +1,9 @@
 package com.toshop.util;
 
-import org.springframework.util.StringUtils;
-
 import java.security.MessageDigest;
 
 /**
+ * MD5加密
  * Created by geely
  */
 public class MD5Util {

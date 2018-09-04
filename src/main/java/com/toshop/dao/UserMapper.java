@@ -24,8 +24,23 @@ public interface UserMapper {
 
     int checkUserEmail(String email);
 
-    int updateUserStateByUserName(@Param("user_state") int user_state,
+    /**
+     * email校验，判断 “该email存在且不属于该ID” 的数量
+     * @param email
+     * @param userId
+     * @return int
+     */
+    int checkUserEmailByUserId(@Param("email") String email,
+                               @Param("userId") Integer userId);
+
+    int updateUserStateByUserName(@Param("user_state") Integer user_state,
                                   @Param("username") String username);
 
     int selectUserStateByUserName (String username);
+
+    int updatePasswordByUserName(@Param("username") String username,
+                                 @Param("newPassword") String newPassword);
+
+    int checkPassword(@Param("userId") Integer userId,
+                      @Param("password") String password);
 }

@@ -173,10 +173,31 @@
   </select>
 
   <update id="updateUserStateByUserName" parameterType="map">
-    update toshop_user set user_state=#{user_state} where user_name=#{username}
+    update toshop_user
+    set user_state=#{user_state},
+        update_time=now()
+    where username=#{username}
   </update>
 
   <select id="selectUserStateByUserName" resultType="int" parameterType="string">
     select user_state from toshop_user where username=#{username}
+  </select>
+  
+  <update id="updatePasswordByUserName" parameterType="map">
+    update toshop_user
+    set password=#{newPassword},
+        update_time=now()
+    where username=#{username}
+  </update>
+
+  <select id="checkPassword" resultType="int" parameterType="map">
+    select count(1) from toshop_user
+    where id=#{userId} and password=#{password}
+  </select>
+
+  <!--email校验，判断“该email存在且不属于该ID”的数量-->
+  <select id="checkUserEmailByUserId" resultType="int" parameterType="map">
+    select count(1) from toshop_user
+    where id=#{userId} and email != #{email}
   </select>
 </mapper>
